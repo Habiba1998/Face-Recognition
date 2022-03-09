@@ -24,7 +24,8 @@ def predict():
     buf = io.BytesIO(captured_image_binary)
     captured_image = cv2.cvtColor(np.array(Image.open(buf)), cv2.COLOR_RGB2BGR)
     dict = recognize_face(captured_image, faces)
-    return jsonify({'status' :str(dict['status']), 'identity':str(dict['identity'])})
+    id = payload['id'][dict['identity']]
+    return jsonify({'status' :str(dict['status']), 'id':str(id)})
 
 
 
