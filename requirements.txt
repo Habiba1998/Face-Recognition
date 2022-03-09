@@ -106,7 +106,7 @@ scikit-learn==1.0.1
 scipy==1.7.1
 sentence-transformers==2.2.0
 sentencepiece==0.1.96
-sip==4.19.13
+sip==5.0.0
 six==1.16.0
 smart-open==5.2.1
 SoundFile==0.10.3.post1
